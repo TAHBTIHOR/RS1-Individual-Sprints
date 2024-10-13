@@ -1,0 +1,28 @@
+/**
+ * @mainpage Sprint 3 - Cylinder Detector Documentation
+ *
+ * @section intro_sec Introduction
+ *
+ * This project is a ROS 2 node that detects cylindrical objects using laser scans.
+ * It processes laser scan data to identify cylindrical shapes of known diameter,
+ * publishes visualization markers in RViz, and broadcasts the detected object's
+ * position as a transform.
+ *
+ * @section features_sec Features
+ * - Detects cylindrical objects of a specific size using laser scan data.
+ * - Publishes visualization markers for easy identification in RViz.
+ * - Broadcasts detected object's position using TF2.
+ * - Designed to be used with TurtleBot3 in a simulated environment.
+ *
+ * @section setup_sec Setup and Usage
+ * 1. Ensure that you have ROS 2 Humble installed.
+ * 2. Build the package:
+ *    @code
+ *    colcon build --packages-select sprint_3
+ *    @endcode
+ * 3. Run the node:
+ *    @code
+ *    ros2 run sprint_3 cylinder_detector
+ *    @endcode
+ */
+
