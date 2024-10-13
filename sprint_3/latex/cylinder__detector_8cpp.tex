@@ -1,0 +1,55 @@
+\hypertarget{cylinder__detector_8cpp}{}\doxysection{src/cylinder\+\_\+detector.cpp File Reference}
+\label{cylinder__detector_8cpp}\index{src/cylinder\_detector.cpp@{src/cylinder\_detector.cpp}}
+{\ttfamily \#include $<$rclcpp/rclcpp.\+hpp$>$}\newline
+{\ttfamily \#include $<$sensor\+\_\+msgs/msg/laser\+\_\+scan.\+hpp$>$}\newline
+{\ttfamily \#include $<$visualization\+\_\+msgs/msg/marker.\+hpp$>$}\newline
+{\ttfamily \#include $<$geometry\+\_\+msgs/msg/pose\+\_\+stamped.\+hpp$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+ros/transform\+\_\+broadcaster.\+h$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+ros/transform\+\_\+listener.\+h$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+ros/buffer.\+h$>$}\newline
+{\ttfamily \#include $<$tf2\+\_\+geometry\+\_\+msgs/tf2\+\_\+geometry\+\_\+msgs.\+hpp$>$}\newline
+{\ttfamily \#include $<$tf2/exceptions.\+h$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for cylinder\+\_\+detector.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cylinder__detector_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classCylinderDetectorNode}{Cylinder\+Detector\+Node}}
+\begin{DoxyCompactList}\small\item\em A ROS 2 node that detects cylindrical objects using laser scans. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{cylinder__detector_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em Main function to start the ROS 2 node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cylinder__detector_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{cylinder__detector_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{cylinder\_detector.cpp@{cylinder\_detector.cpp}!main@{main}}
+\index{main@{main}!cylinder\_detector.cpp@{cylinder\_detector.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+Main function to start the ROS 2 node. 
+
+Initializes the ROS 2 environment, creates the node, and spins it to process callbacks.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Number of command-\/line arguments. \\
+\hline
+{\em argv} & Array of command-\/line arguments. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 upon successful execution. 
+\end{DoxyReturn}

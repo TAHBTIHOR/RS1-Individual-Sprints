@@ -1,0 +1,25 @@
+\hypertarget{index_intro_sec}{}\doxysection{Introduction}\label{index_intro_sec}
+This project is a ROS 2 node that detects cylindrical objects using laser scans. It processes laser scan data to identify cylindrical shapes of known diameter, publishes visualization markers in RViz, and broadcasts the detected object\textquotesingle{}s position as a transform.\hypertarget{index_features_sec}{}\doxysection{Features}\label{index_features_sec}
+
+\begin{DoxyItemize}
+\item Detects cylindrical objects of a specific size using laser scan data.
+\item Publishes visualization markers for easy identification in RViz.
+\item Broadcasts detected object\textquotesingle{}s position using TF2.
+\item Designed to be used with Turtle\+Bot3 in a simulated environment.
+\end{DoxyItemize}\hypertarget{index_setup_sec}{}\doxysection{Setup and Usage}\label{index_setup_sec}
+
+\begin{DoxyEnumerate}
+\item Ensure that you have ROS 2 Humble installed.
+\item Build the package\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{colcon build -\/-\/packages-\/select sprint\_3}
+
+\end{DoxyCode}
+
+\item Run the node\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ros2 run sprint\_3 cylinder\_detector}
+
+\end{DoxyCode}
+ 
+\end{DoxyEnumerate}
